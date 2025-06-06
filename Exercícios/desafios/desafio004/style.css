@@ -44,7 +44,7 @@ main{
     padding: 20px;
     max-width: 800px;
     margin: auto;
-    min-width: 280px;
+    min-width: 240px;
 }
 .principal{
     font-family: principal, arial, sans-serif;
@@ -157,4 +157,7 @@ h2{
 h3{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+#arina{
+    width: 100%;
 }
