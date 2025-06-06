@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+           display:flex ;
+           justify-content: center;
+           align-items: center;
+           height: 100px;
+        }
+        
+        img { 
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+}

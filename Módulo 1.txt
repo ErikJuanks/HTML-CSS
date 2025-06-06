@@ -1,0 +1,154 @@
+HTML                              CSS                            JS
+Conteúdo                          Design                         interações
+Textos                              cores                         menus                               R$30/h
+imagens                             sombras                       animações
+vídeos                              tamanhos                      popups
+tabelas                             posicionamento                validações
+
+conteúdo em html
+<h1> exemplo de titulo </h1>                     <h1>: abertura de tag  </h1>: fechamento de tag
+<p> exemplo de parágrafo </p>  
+<img src="foto.png" alt="exemplo de foto">       src e alt: parâmetro  foto.png e exemplo de foto: valor               
+
+estilo CSS
+h1{                                                        h1{:seletor
+   
+   font-family: arial;                               <--- declaração = par de propriedade e valor
+   font-size: 20pt;                                          toda declaração tem que ter ; no fim.
+   color: blue;                                      <--- "color" = propriedade, "blue" = valor
+
+   }
+-----------------------------------------------------------------------------------------------------------------
+Estrutura básica de documentos HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=divice-width,initial=scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <h1>hello world!</h1>
+        
+    </body>
+</html>
+-----------------------------------------------------------------------------------------------------------------
+Front-end, Back-end e Full stack
+Front-end: Dev. para o lado do cliente ( client side )
+Back-end: Dev. para o lado do servidor ( server side )
+Full stack: ambos os lados
+-----------------------------------------------------------------------------------------------------------------
+Se quiser que os caracteres apareçam? ( ex: <p> e </p> )
+&lt; <-- menor que ( less than )
+&gt; <-- maior que ( greater than )
+-----------------------------------------------------------------------------------------------------------------
+Símbolos e emojis no seu site:
+<!--> adiciona comentários ( não aparecem no site )
+&reg; = marca registrada
+&copy; = copyright
+&trade; = marca registrada ( TM )
+site de simbolos
+https://www.w3schools.com/charsets/ref_utf_symbols.asp=
+site de emojis:
+https://emojipedia.org/
+-----------------------------------------------------------------------------------------------------------------
+Imagens no seu site:
+procurar imagens com direito de reutilização nas ferramentas do google imagens.
+sites para procura: google imagens; unsplash; pexels; freepik; rawpixel; pixabay; libreshot; wikimedia commons.
+JPEG: gera arquivos muito pequenos e ocupam pouco espaço no disco.
+PNG: capacidade de configurar a opacidade de cada pixel.
+utilizar o GIMP: Usar Largura máx. 1500 ( para site: 650 ) // resolução x e y máx. 72.
+export as.
+-----------------------------------------------------------------------------------------------------------------
+Utilizando imagens dentro do site em HTML:
+img: em src: arquivo do computador ( origem ) // alt: explicação do que é o arquivo ( alternativo )
+formas de carregar imgs: mesma pasta do idex; pasta dentro do idex ( ou fora ); meio externo ( sites URL ).
+-----------------------------------------------------------------------------------------------------------------
+Como mudar o favicon de um site?
+favicon: imagem minúscula ao lado do title do site
+as fotos devem ser em formato: ico // onde achar: icons archive
+para fazer um ícone: favicon.cc
+como gerar um ícone: favicon.io
+Já tenho um ícone, mas não está em fomato ico: favicon.io ( mesmo do tópico passado )
+código para por o favicon: link:favicon ( substitue o que está dentro do href="nome do seu favicon"
+-----------------------------------------------------------------------------------------------------------------
+Entendendo a hierarquia dos títulos:
+Um código pode ter até 6 níveis de título, que vai desde h1 até o h6. Esses títulos servem para organizar títulos, subtítulos, tópicos e subtópicos.
+Lorem: gerador de "blá blá blá"
+-----------------------------------------------------------------------------------------------------------------
+Estudo de semântica:
+HTML4: o uso dos códigos era focado apenas em forma, hoje, muitos desses códigos estão obsoletos, o que é preciso ter muito cuidado!!!
+HTML5: foco em significado, a forma hoje é editada pelo CSS e pelo JS.
+dev.w3c.com: Tags obsoletas.
+-----------------------------------------------------------------------------------------------------------------
+Formatação de textos:
+Usando a tag <b>, é possível criar um texto em negrito ( não semântica ).
+Usando a tag <strong>, também é possível criar um texto em negrito ( semântica )
+Usando a tag <i>, é possível fazer um texto em itálico ( não semântica )
+Usando a tag <em>, também é possível criar um texto em itálico ( semântica )
+Usando a tag <mark>, podemos marcar uma parte do texto como se usássemos o marca texto da vida real.
+Usando a tag <del>, é possível marcar um texto como "descartável"
+Usando a tag <ins>, é possível marcar um texto como inserido recentemente
+Usando a tag <sup>, é possível sobrescrever um texto
+Usando a tag <sub>, é possível subscrever um texto
+Usando a tag <code>, é possível criar um texto com o mesmo espaçamento ( código-fonte )
+Usando a tag <pre>, podemos criar o formato de código usado no VScode ( pré-formatado )
+Usando a tag <q>, voce pode colocar aspas para citação em seus textos, dando sentido ao texto e a tag ( citação simples )
+Usando a tag <blockquote>, voce tem uma citação deslocada ( citação completa ) - usando a tag cite, voce pode colocar o link da citação
+Usando a tag <abbr>, voce pode explicar qual o significado de uma abreviação 
+Usando a tag <bdo>, posso criar textos invertidos
+-----------------------------------------------------------------------------------------------------------------
+Trabalhando com Listas:
+Com a tag <ol>, posso criar uma organizacao de lista ( existe o parametro TYPE="", podendo esta entre as aspas: 1, A, a, i, I )
+Com a tag <li>, posso criar a numeracao da lista organizada
+Com a tag <ul>, posso criar listas desordenadas ( existe o parametro TYPE="", podendo está entre as aspas: circle, square e disc ).
+OBS: é possivel criar um <ol> dentro de outro <ol>. Também é possivel misturar listas ol com ul.
+Com as tags <dt> e <dd>, é possivel criar uma lista de definicao e a descricao para essa lista.
+-----------------------------------------------------------------------------------------------------------------
+Trabalhando com links:
+Usando a tag <a>, eu posso criar uma ancora para sites externos ( posso usar os parametros target="_blank" rel="external para nao sobrepor o link ao meu site, e abrir uma nova janela para o site que o link está ancorado )
+é interresante usar hreflang="lingua do site" para sites internacionais.
+Usando o target="_self", eu digo para o google que quero que o outro site abra sobre o meu.
+Usando o rel="nofollow", eu digo que meu site nao tem nada a ver com o site ancorado.
+Usando ../, eu digo que quero o a pág fora do arquivo que estou.
+Usando os parâmetros download e type="application/qualquer formato", podemos disponibilizar algo para download.
+-----------------------------------------------------------------------------------------------------------------
+Imagens dinâmicas:
+Usando a tag <pictures>, posso criar uma imagem que se adapta ao tamanho de tela do usuário.
+Para isso, devo usar um parâmetro chamado <source:media:type=
+Sempre substituir o "min" por "max". deixe sempre o menor tamanho em cima do maior.
+-----------------------------------------------------------------------------------------------------------------
+Reproduzindo audios: 
+Usando a tag <audio> com o parâmetro "controls", é possível por audios no seu site e controlar o play e o pause.
+( Devemos adicionar o parâmetro type no audio, para identificar o formato da mídia )
+usando o parâmetro preload="metadata", podemos deixar o arquivo carregar mas não ser baixado, diminuindo o risco de interromper nosso site
+Ex: <audio controls preload="metadata">
+      <source src="meu-audio.mp3 type="audio/mpeg">
+    </audio>
+-----------------------------------------------------------------------------------------------------------------
+Videos no site: 
+Site para baixar videos: Pexels.
+Usar Vimeo para deixar videos privados.
+Compatibilidade: MP4, M4V, OGV, WebM. ( Melhor formato para site: M4V )
+Usando a tag <video>, posso colocar videos de dentro do meu proprio servidor ao meu site
+parâmetros: controls// witdh="560"
+Ex: <Video controls witdh="560">
+      <source src="meu-video.mp4 type="video/mp4">
+    </video>
+Usar vídeos do youtube ajuda a diminuir o consumo de armazenamento do site, diminuindo o preço da hospedagem que o cliente paga. 
+-----------------------------------------------------------------------------------------------------------------
+Estudo das CSS:
+Estilos in-line são estilos do CSS que ficam na própria linha das tags, sem alterar outras ao longo do código.
+Ex: <h1 style="background-color:"mediumblue;"> blá blá blá </h1>
+
+Estilos CSS interno
+Usadas na <head>, esse método pega todas as linhas de um único código, mas para mais códigos, pode se tornar desvantajoso.
+
+Estilos CSS externos
+Pode criar um arquivo "style.css", onde usando o parâmetro link:css, podemos juntar o mesmo estilo em diversas páginas.
+Pode usar mais de um link:css caso precise.
+No mesmo arquivo, eu posso usar os 3 tipos de CSS, sendo o In-line>interno>externo. Porém, o externo é mais versátil.
+evitar utilizar o in-line, somente em casos específicos.
+O interno, coloque apenas para estilos pequenos.
+Externo, use a vontade.

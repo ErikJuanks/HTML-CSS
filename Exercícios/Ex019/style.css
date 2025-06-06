@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    margin: 0px;
+}
+h1{
+    color: rgb(80, 80, 80);
+}
+header{
+    margin: auto;
+    text-align: center;
+    text-shadow: 1px 1px 3px #2e2e2e9a;
+    padding: 10px;
+    background-color: white;
+}
+nav > a{
+    text-decoration: none;
+    margin: 30px;
+}
+nav{
+    margin: 0px;
+    background-color: lightgray;
+    padding: 20px
+}
+#principal{
+    text-align: center;
+}
+#secundario{
+    text-align: center;
+}
+p{
+    text-indent: 15px;
+}
+main{
+    text-align: justify;
+    background-color: white;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    margin: 0%;
+    color: white;
+}

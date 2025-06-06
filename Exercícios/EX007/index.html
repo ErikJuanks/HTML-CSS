@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>formatacao de textos</title>
+    <style>
+        mark {
+            background-color: brown;
+            color: aliceblue;
+            size: 20px;
+        }
+        abbr{
+            background-color: white;
+            color: black;
+            background-attachment: fixed;
+            background-image: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Negrito / destaque</h1>
+    <h2>a tag em negrito, pode ser escrita de duas formas</h2>
+    <div>&lt;b&gt; ou &lt;strong&gt;</div>
+    <p>de ambas as formas, nosso texto ficará em negrito, porem, essas formas sao nao semantica e semantica,
+        respectivamente</p>
+    <p>ou seja, é melhor usar o termo &lt;strong&gt;</p>
+    <H1>Itálico / enfase</H1>
+    <h2>O Itálico tambem pode ser escrito de duas formas:</h2>
+    <p>&lt;i&gt; ou &lt;em&gt;</p>
+    <p>porem, elas sao nao semantica e semantica, respectivamente. <br>ou seja, é melhor usar o termo &lt;em&gt;</p>
+    <div>fazendo os testes, temos:
+        <br> <strong>esse modo de usar o negrito, com a tag strong</strong>
+        <br> <em>e esse modo de usar o Itálico, usando a tag em</em>
+    </div>
+    <p>sem correr riscos de usar termos sem semantica</p>
+    <h2>Marca-texto</h2>
+    <p>podemos tambem usar o termo &lt;mark&gt;para marcamos com um marca texto, ainda podendo usar a tag &lt;style&gt;,
+        partindo para o css</p>
+    <p>exemplo disso: <mark>esse texto da qual usei o style.</mark></p>
+    <p>posso criar um style para todos os mark ou para todos os textos utilizando o css, basta ir na aba &lt;head&gt; e
+        digitar tambem a tag style, abrindo um seletor apenas para o que eu quero</p>
+    <h2>texto grande e pequeno</h2>
+    <p>podemos criar um <big>texto grande</big>e um <small>texto pequeno</small><br>as tags usadas aqui foram
+        &lt;big&gt; e &lt;small&gt;
+    </p>
+    <h2>texto excluído</h2>
+    <p>podemos marcar um texto como <del>excluído</del>, o que indica que ele dever ser lido, mas nao considerado</p>
+    <h2>texto inserido</h2>
+    <p>podemos marcar um texto como <ins>inserido</ins> para dar enfase e indicar que ele foi adicionado depois.</p>
+    <h2>texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>2</sup>+3t+5</p>
+    <h2>texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <p>para isso, devo usar as tags &lt;Sup&gt; e &lt;sub&gt;, respectivamente.</p>
+    <h2>código-fonte</h2>
+    <p><code>é possível criar um texto com o mesmo espaçamento</code></p>
+    <h2>pré formatacao</h2>
+    <p><pre>podemos criar o formato de código usado no VScode</pre></p>
+    <h2>citacao simples</h2>
+    <p>voce pode colocar <q>aspas</q> para citação em seus textos, dando sentido ao texto e a tag</p>
+    <h2>citacao completa</h2>
+    <p>Segundo o autor Mark Menson: <blockquote>Esta é a verdadeira origem do sucesso de Bukowski: sentir-se confortável com o fracasso. Ele estava pouco se lixando para ser bem-sucedido.</blockquote></p>
+    <h2>abreviacoes</h2>
+    <p><abbr title="vai dar certo">vdct</abbr></p>
+    <h2>textos invertidos</h2> <!--descartável-->
+    <p><bdo dir="ltr">descartável</bdo></p> <!--lrt e rtl-->
+</body>
+
+</html>

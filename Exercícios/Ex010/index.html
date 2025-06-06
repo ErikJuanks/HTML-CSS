@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Veja essas imagens</h1>
+    <p>abra elas em outro dispositivo ou aumente e diminua seu navegador!</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <!--Precisa ser acima o tamanho minimo ( sendo sempre "max-width")-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem máxima">
+    </picture>
+    <h1>Trabalhando com audios</h1>
+    <p>Aqui, vamos adicionar um audio para meu site</p>
+    <!--Formatos: mpeg(mp3), ogg e wav-->
+    <audio preload="metadata" controls>
+        <source src="midia/Audio.mp3.mp3" type="audio/mpeg">
+        <source src="midia/Audio.mp3.ogg" type="audio/ogg">
+        <source src="midia/Audio.mp3.wav" type="audio/wav">
+        <p>Seu navegador nao suporta arquivos mp3</p>
+    </audio>
+    <!--utilizar sempre o preload, type=audio/formato, controls como principais parametros-->
+    <p><a href="midia/Audio.mp3.mp3">click aqui para baixar o arquivo mp3</a></p>
+
+</body>
+</html>
