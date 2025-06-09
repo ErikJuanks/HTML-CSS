@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Poema;
+    src: url(Sriracha/Sriracha-Regular.ttf);
+}
+@font-face {
+    font-family: cabecalho;
+    src: url(Passion_One/PassionOne-Bold.ttf);
+}
+*{
+    margin: 0;
+}
+#milton{
+    color: white;
+    text-decoration: none;
+}
+#milton:hover{
+    text-decoration: underline;
+}
+header{
+    font-family: cabecalho, Arial, Helvetica, sans-serif;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+#titulo{
+    font-size: 60px;
+} 
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: poema, Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 5px;
+    display: inline-block;
+    text-shadow: 2px 2px 4px black;
+}
+.imagem{
+    background-color: rgba(51, 51, 51);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    /*inset = para dentro*/
+}
+#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.384);
+}
+#img2{
+    background-image: url(imagens/background002.jpg);
+    box-shadow: 10px 10px 10px black;
+    
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.384);
+}
+@media (max-width: 768px) {
+    section > p{
+        font-size: x-large;
+        padding: 20px 0px 20px 0px;
+    } 
+    }
+    
