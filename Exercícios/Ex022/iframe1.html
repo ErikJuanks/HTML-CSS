@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            height: 400px;
+            width: 95vw;
+            display: block;
+            margin: auto;
+            border: 2px solid black;
+        }
+        a{
+            color: black;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tenha uma prévia de nossas páginas com os links abaixo!</h1>
+    <ul>
+        <a href="paginasextras/pag1.html" target="frame"><li>Pág 1</li></a>
+        <a href="paginasextras/pag2.html" target="frame"><li>Pág 2</li></a>
+        <a href="paginasextras/pag3.html" target="frame"><li>Pág 3</li></a>
+    </ul>
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções de link disponibilizados!</h1>"></iframe>
+</body>
+</html>
