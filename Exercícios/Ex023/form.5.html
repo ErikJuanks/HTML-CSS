@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <H1>Formulário</H1>
+    <form action="">
+        <p>
+            <label for="est">Estados:</label>
+            <select name="est" id="est">
+                <option value="" selected>Escolha aqui...</option>
+                <optgroup label="Região norte">
+                    <option value="PA">Pará</option>
+                <optgroup label="Região nordeste">
+                    <option value="CE">Ceará</option>
+                </optgroup>
+            </select>
+        </p>
+        <p> Profissões:
+            <input type="text" name="prof" id="prof" list="profissoes">
+            <datalist id="profissoes">
+                <option value="padrão" selected>Escolha aqui...</option>
+                <option value="Prf">Professor</option>
+                <option value="adm">Administrador</option>
+                <option value="dev">Desenvolvedor</option>
+            </datalist>
+        </p>
+        <P>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="text" id="text"></textarea>
+
+        </P>
+            <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>

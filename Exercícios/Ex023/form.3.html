@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <H1>Formulário</H1>
+    <fieldset>
+        <legend>Série favorita</legend>
+        <form autocomplete="off" method="post" action="Login.js">
+            <p><label for="sexo"><input type="radio" name="sexo" id="masc" value="masc">Masculino</label></p>
+            <p><label for="sexo"><input type="radio" name="sexo" id="fem" value="femi">Feminino</label></p>
+            <p><label for="sexo"><input type="radio" name="sexo" id="na" value="na">Prefiro não dizer</label></p>
+            <!--Sempre usar o mesmo name para apenas 1 escolha, add value é importante!-->
+
+            <p><label for="st"><input type="checkbox" name="st" id="st">Stranger Things</label></p>
+            <p><label for="sn"><input type="checkbox" name="sn" id="sn"></label>Supernatural</p>
+            <p><label for="tw"><input type="checkbox" name="tw" id="tw"></label>Teen Wolf</p>
+            <p> <input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </fieldset>
+
+    </form>
+</body>
+</html>

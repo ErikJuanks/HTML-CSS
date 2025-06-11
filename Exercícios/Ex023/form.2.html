@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <H1>Formulário</H1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form autocomplete="off" method="post" action="Login.js">
+            <p><label for="email">Email: <input type="email" name="email" id="email" required placeholder="fulanocom@gmail.com" autocomplete="email" ></label></p>
+            <p><label for="telefone">Telefone: <input type="tel" name="telefone" id="telefone" required pattern="^\(\d{2}\d)\d{4,5}-\d{4}$" autocomplete="tel-national" placeholder="(xx) xxxxx-xxxx"></label></p>
+            <p> <input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </fieldset>
+
+    </form>
+</body>
+</html>

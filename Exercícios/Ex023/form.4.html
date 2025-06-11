@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <H1>Formulário</H1>
+    <fieldset>
+        <legend>Sua escolha</legend>
+        <form autocomplete="off" method="post" action="Login.js">
+            <p>
+                Cor de sua escolha: 
+                <input type="color" name="cor" id="cor" value="#ffffff">
+            </p>
+            <p>
+                Nível de Satisfação:
+                <input type="range" name="nivel" id="nivel" min="1" max="5">
+            </p>
+            <p>
+                Escolha um arquivo: 
+                <br>
+                <br/>
+                <input type="file" name="arq" id="arq">
+            </p>
+            <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </fieldset>
+
+    </form>
+</body>
+</html>
