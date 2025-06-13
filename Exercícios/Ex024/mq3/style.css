@@ -1,0 +1,108 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) and (min-width: 600px) {
+    
+}
+body{
+    height: 100vh;
+    background-image: url(imagens/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+main{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.507);
+    background-image: url(imagens/icon-phone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-radius: 10px;
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    body{
+        background-image: url(imagens/back-tablet.jpg);
+    }
+    main{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: (255, 255, 255, 0.541);
+    background-image: url(imagens/icon-tablet.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-radius: 10px;
+}
+}
+@media screen and (min-width: 992px) and (max-width: 1920px) {
+    body{
+        background-image: url(imagens/back-pc.jpg);
+    }
+    main{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(imagens/back-pc.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-radius: 10px;
+}
+}
+@media screen and (min-width: 1920px) {
+    body{
+        background-image: url(imagens/back-tv.jpg);
+    }
+    main{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.541);
+    background-image: url(imagens/icon-tv.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-radius: 10px;
+}
+}
+@media print {
+    *{
+        display: block;
+    }
+    body{
+        background-image: url(imagens/back-print.jpg); /*desnecessário*/
+}
+h1{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    border: 1px solid black;
+    background-color: darkgray;
+    background-image: url(imagens/icon-print.png);
+    display: block;
+}
+
+
+}
