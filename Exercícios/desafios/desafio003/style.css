@@ -2,13 +2,12 @@
 body{
     background-color: black;
 }
-         h1{
-            color: white;
-           display:flex ;
-           justify-content: center;
-           align-items: center;
-           height: 100px;
-        }
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
         p{
             color: white;
             display: flex;
