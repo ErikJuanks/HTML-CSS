@@ -8,16 +8,20 @@
 </head>
 <body>
     <main id="container">
-        
-        <h1>Login</h1>
-        <p>Seja bem-vindo(a)novamente. Faça login para acessar sua conta e aproveitar nosso site.</p>
-    <form action="Login.js" method="post">
-        <p><img id="user" src="imagens/icons8-user-32.png" alt="user">
-            <input type="email" name="gmail" id="gmail"></p>
-        <p><img id="key" src="imagens/icons8-key-24.png" alt="key">
-            <input type="password" name="senha" id="senha">
-    </form>
+        <section>
+            <div id="imagens">
+                <!--imagens-->
+            </div>
+            <div id="form">
+            <h1>Login</h1>
+            <p id="sub">Seja bem-vindo(a)novamente. Faça login para acessar sua conta e aproveitar nosso site.</p>
+                <form action="Login.js" method="post">
+            <p class="small"><img id="user" src="imagens/icons8-user-32.png" alt="user">
+                <input placeholder="Email ou Nome de Usuário..." type="email" name="gmail" id="gmail"></p>
+            <p class="small"><img id="key" src="imagens/icons8-key-24.png" alt="key">
+                <input placeholder="Senha..." type="password" name="senha" id="senha">
+            </form></div>
+        </section>
     </main>
-    
 </body>
 </html>
