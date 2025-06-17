@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .conteiner{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+            
+            /*Podemos mudar o flex direction e mudar os eixos do flex*/
+        }
+        .itens{
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens">A</div>
+        <div class="itens">Ba be bi bo bu</div>
+        <div class="itens">C</div>
+        <div class="itens">do re mi fa sol la si do</div>
+        <div class="itens">E</div>
+    </div>
+</body>
+</html>
