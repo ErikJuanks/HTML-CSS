@@ -1,0 +1,56 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, section{
+    padding: 20px;
+}
+h1, p, h2{
+    margin-bottom: 10px;
+}
+body{
+    line-height: 1.5em;
+    
+}
+section.flex-content{
+    background-color: rgb(199, 199, 199);
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.text{
+    flex: 0 0 400px;
+
+}
+.media{
+    flex: 0 0 400px;
+    display: block;
+}
+img, iframe{
+    width: 400px;
+
+}
+@media screen and (max-width: 1920px) and (min-width:1115px ) {
+    .text{
+        flex-basis: 65%;
+    }
+    img, iframe{
+        width: 540px;
+        height: 315px;
+        margin: auto;
+        display: block;
+    }
+}
