@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 1px dashed black;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(4, 1fr); 
+            height: 303px;
+            gap: 3px;
+            
+        }
+        /*Grid-area:
+        row-start > column-start > row-end > column-end*/
+        .caixa1{
+            grid-area: 1 / 1 / 1 / 5 ;
+        }
+        .caixa2{
+            grid-area: 2 / 1 / 4 / 3;
+            border: 2px dashed red;
+        }
+        .caixa3{
+            grid-area: 2 / 3 / 4 / 5;
+            border: 2px dashed blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <div class="caixa1">Caixa 1</div>
+            <div class="caixa2">Caixa 2</div>
+            <div class="caixa3">Caixa 3</div>
+        </div>
+    </div>
+</body>
+
+</html>
