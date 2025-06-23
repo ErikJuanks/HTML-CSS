@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .items{
             border: 1px dashed black;
             text-align: center;
@@ -13,7 +17,8 @@
             display: grid;
             grid-template-columns: auto auto auto;
             grid-template-rows: 100px 100px 100px;
-            grid-gap: 20px;
+            gap: 20px;
+            border: 3px dashed blue;
         }
 
     </style>
