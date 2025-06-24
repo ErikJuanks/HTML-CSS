@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.container{
+    border: 1px solid black;
+    display: flex;
+    width: 98vw;
+    flex-wrap: wrap;
+}
+.red{
+    height: 300px;
+    background-color: red;
+    flex: 1 1 300px;
+}
+.paragrafo{
+    height: 250px;
+    background-color: aqua;
+    flex: 2 1 200px;
+}

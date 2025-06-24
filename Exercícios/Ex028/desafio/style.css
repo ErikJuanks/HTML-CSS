@@ -12,7 +12,6 @@ body{
 }
 .container nav {
     align-content: center;
-    justify-content: ;
 }
 header{
     grid-area: 1 / 1 / 1 / 4;
@@ -38,7 +37,7 @@ nav a:hover{
     color: black;
     transition: .3s;
     padding: 10px;
-    transform: translateX(5px);
+    transform: translate(1rem 1rem);
     border-radius: 10px;
 }
 main{
